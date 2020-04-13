@@ -1,9 +1,6 @@
 id,title,user_story,acceptance_criteria,business_value,estimation,status
-1,2,3,4,5,6,7
-,capra cu multi iezi,o capra cu trei iezi,4 personaje,1000 points,3h,planning
-3,pielea ursului,un urs cu piele,ursul sa aiba piele,300 points,2h,
-4,lupul,,,,,
-5,oaia,,,,,
-6,doua nurori,una cu inca una nurori,sa fie bine,200,2h,
-7,tapul,,,,,
-8,tretg,gteg,getg,teg,get,
+1,Alice in Wonderland,Alice falls into the Wonderland,"Alice has to be a female character,
+the Hatter is mad and the Rabbit drinks tea ",500 points,6h,planning
+2,The Capra cu trei iezi,One goat and 3 Kids,"The wolf dies
+and the goat gets revenge",300 points,3h,review
+3,The bear tricked by the fox,The bear loses his tail,The bear and the fox must know how to speak,300 points,2h,done

@@ -46,7 +46,6 @@ def update(id):
     return render_template('update.html', id=id, data=file_data)
 
 
-
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
