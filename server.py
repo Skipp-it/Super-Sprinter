@@ -16,12 +16,12 @@ def add_new():
     new_id = data_handler.generate_id()
     if request.method == 'POST':
         user_story = {
-                      "id": new_id,
-                      "title": request.form.get('title'),
-                      "user_story": request.form.get('user_story'),
-                      "acceptance_criteria": request.form.get('acceptance_criteria'),
-                      "business_value": request.form.get('business_value'),
-                      "estimation": request.form.get('estimation')}
+            "id": new_id,
+            "title": request.form.get('title'),
+            "user_story": request.form.get('user_story'),
+            "acceptance_criteria": request.form.get('acceptance_criteria'),
+            "business_value": request.form.get('business_value'),
+            "estimation": request.form.get('estimation')}
         data_handler.add_on_csv(user_story)
         return redirect('/')
     return render_template('story.html')
@@ -34,16 +34,16 @@ def update(id):
 
     if request.method == 'POST':
         user_story = {
-                      "title": request.form.get('title'),
-                      "user_story": request.form.get('user_story'),
-                      "acceptance_criteria": request.form.get('acceptance_criteria'),
-                      "business_value": request.form.get('business_value'),
-                      "estimation": request.form.get('estimation'),
-                      "status": request.form.get('status')}
+            "id": id,
+            "title": request.form.get('title'),
+            "user_story": request.form.get('user_story'),
+            "acceptance_criteria": request.form.get('acceptance_criteria'),
+            "business_value": request.form.get('business_value'),
+            "estimation": request.form.get('estimation'),
+            "status": request.form.get('status')}
         data_handler.update_on_csv(id, user_story)
         return redirect('/')
     return render_template('update.html', id=id, data=file_data)
-
 
 
 
